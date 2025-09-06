@@ -2,21 +2,14 @@
 
 Perfect for print/RIP workflows that export separations as individual files.
 
-✅ Saves as true CMYK (Photometric=Separated, not RGB or Gray)
-
-✅ 8-bit channels
-
-✅ Untagged CMYK (no embedded ICC profile)
-
-✅ BigTIFF enabled (handles very large images)
-
-✅ No compression by default (lossless, safest for print)
-
-✅ Keeps DPI from the first channel when available (falls back to 72 DPI)
-
-✅ Simple file picker — no command-line arguments needed
-
-✅ Auto-detects channel order from filenames
+✅ Saves as true CMYK (Photometric=Separated, not RGB or Gray)  
+✅ 8-bit channels  
+✅ Untagged CMYK (no embedded ICC profile)  
+✅ BigTIFF enabled (handles very large images)  
+✅ No compression by default (lossless, safest for print)  
+✅ Keeps DPI from the first channel when available (falls back to 72 DPI)  
+✅ Simple file picker — no command-line arguments needed  
+✅ Auto-detects channel order from filenames  
 
 ## What This Is For
 
@@ -106,20 +99,20 @@ You’ll get a single untagged CMYK BigTIFF, 8-bit, with no compression and DPI 
 
 ## Troubleshooting
 
-**Photoshop shows ‘Untagged Gray’ instead of CMYK**
+**Photoshop shows ‘Untagged Gray’ instead of CMYK**  
 This tool writes Photometric=Separated with PlanarConfig=Contig. If you see Gray, confirm you’re running the latest version and that your downstream app supports CMYK BigTIFF.
 
-**Wrong channels / swapped colors**
+**Wrong channels / swapped colors**  
 Check filenames end exactly with the required suffixes (`…Cyan.tif`, `…Magenta.tif`, `…Yellow.tif`, `…Black.tif`). The tool maps channels strictly from those suffixes.
 
-**DPI isn’t what I expect**
+**DPI isn’t what I expect**  
 DPI is copied from the first selected file if present; otherwise it defaults to 72. Ensure the first file has the correct DPI metadata if you rely on it.
 You can also change the DPI in Photoshop with "Resample" off
 
-**Huge files fail with classic TIFF limits**
+**Huge files fail with classic TIFF limits**  
 This tool writes BigTIFF, which supports files > 4 GB. Ensure enough RAM/disk and try saving to a local SSD.
 
-**I need compression**
+**I need compression**  
 Set the writer to `compression='lzw'` (lossless). Default is none for maximum fidelity/compatibility.
 
 ## Roadmap / Custom Tweaks

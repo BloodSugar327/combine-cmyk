@@ -114,6 +114,7 @@ Check filenames end exactly with the required suffixes (`…Cyan.tif`, `…Magen
 
 **DPI isn’t what I expect**
 DPI is copied from the first selected file if present; otherwise it defaults to 72. Ensure the first file has the correct DPI metadata if you rely on it.
+You can also change the DPI in Photoshop with "Resample" off
 
 **Huge files fail with classic TIFF limits**
 This tool writes BigTIFF, which supports files > 4 GB. Ensure enough RAM/disk and try saving to a local SSD.
@@ -126,10 +127,6 @@ Set the writer to `compression='lzw'` (lossless). Default is none for maximum fi
 * Optional: disable inversion if your inputs are already positive.
 * Optional: progress bar on save for very large outputs.
 * Optional: CLI flags for headless operation (keep GUI by default).
-
-## License
-
-Choose a license you prefer (e.g., MIT). Add `LICENSE` to the repo.
 
 ## Credits
 

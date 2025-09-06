@@ -120,7 +120,8 @@ Set the writer to `compression='lzw'` (lossless). Default is none for maximum fi
 * Optional: disable inversion if your inputs are already positive.
 * Optional: progress bar on save for very large outputs.
 * Optional: CLI flags for headless operation (keep GUI by default).
-
+* Optional: Add support for 16 and 32 bit TIFF
+* 
 ## Credits
 
 Built with ❤️ using Pillow, tifffile, and NumPy.

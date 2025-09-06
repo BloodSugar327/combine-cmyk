@@ -3,12 +3,19 @@
 Perfect for print/RIP workflows that export separations as individual files.
 
 ✅ Saves as true CMYK (Photometric=Separated, not RGB or Gray)
+
 ✅ 8-bit channels
+
 ✅ Untagged CMYK (no embedded ICC profile)
+
 ✅ BigTIFF enabled (handles very large images)
+
 ✅ No compression by default (lossless, safest for print)
+
 ✅ Keeps DPI from the first channel when available (falls back to 72 DPI)
+
 ✅ Simple file picker — no command-line arguments needed
+
 ✅ Auto-detects channel order from filenames
 
 ## What This Is For

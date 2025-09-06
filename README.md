@@ -106,9 +106,6 @@ You’ll get a single untagged CMYK BigTIFF, 8-bit, with no compression and DPI 
 
 ## Troubleshooting
 
-**“Repository not found” when installing**
-Make sure you replaced `<YOURUSERNAME>` with your actual GitHub username and that you pushed the repo and the tag.
-
 **Photoshop shows ‘Untagged Gray’ instead of CMYK**
 This tool writes Photometric=Separated with PlanarConfig=Contig. If you see Gray, confirm you’re running the latest version and that your downstream app supports CMYK BigTIFF.
 
